@@ -11,46 +11,46 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-.main-div{
+.main-div {
   background-color: rgb(24, 24, 24);
   width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
 }
-.todo-container{
+.todo-container {
   position: relative;
   text-align: center;
   width: 450px;
 }
-.todo-logo figure img{
+.todo-logo figure img {
   height: 100px;
   /* filter: grayscale(); */
   filter: saturate(2);
   margin-top: 20px;
 }
-.todo-logo figure figcaption{
+.todo-logo figure figcaption {
   font-size: 4rem;
   text-transform: capitalize;
   color: white;
 }
-.input-text{
+.input-text {
   /* width: 100%; */
   height: 5rem;
   background-color: rgb(255, 255, 255);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   margin: 1rem;
   margin-bottom: 3rem;
   position: relative;
 }
-.input-text input{
+.input-text input {
   color: rgb(0, 0, 0);
   font-weight: 600;
   outline: none;
   border: none;
   width: 100%;
   height: 100%;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   padding: 0px 1rem;
   padding-right: 3rem;
   background: none;
@@ -61,7 +61,7 @@ html {
 .input-text input:focus {
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.185);
 }
-.input-text i{
+.input-text i {
   width: 10%;
   height: 100%;
   cursor: pointer;
@@ -75,10 +75,10 @@ html {
   align-items: center;
   justify-content: center;
 }
-.input-text i:hover{
+.input-text i:hover {
   color: rgb(21, 255, 0);
 }
-select{
+select {
   position: absolute;
   top: 135px;
   right: -180px;
@@ -95,40 +95,40 @@ select{
   padding: 1rem;
   font-size: 1.8rem;
 }
-.todo-tasks-container{
+.todo-tasks-container {
   display: flex;
   /* flex-direction: column; */
   height: auto;
   flex-direction: column-reverse;
   /* margin-top: 5rem; */
 }
-.todo-tasks{
+.todo-tasks {
   width: 95%;
   min-height: 4rem;
   background-color: rgb(165, 165, 165);
   color: rgb(0, 0, 0);
-  border-radius: .6rem;
-  margin: .5rem auto;
+  border-radius: 0.6rem;
+  margin: 0.5rem auto;
   display: flex;
   align-items: center;
   /* transition: 1s all; */
 }
-.todo-tasks:hover{
+.todo-tasks:hover {
   background-color: rgb(224, 224, 224);
 }
-.todo-tasks:hover > .i1{
+.todo-tasks:hover > .i1 {
   color: blue;
   display: block;
 }
-.todo-tasks:hover > .i2{
+.todo-tasks:hover > .i2 {
   color: red;
   display: block;
 }
-.todo-tasks:hover > .i3{
+.todo-tasks:hover > .i3 {
   color: green;
   display: block;
 }
-.todo-tasks p{
+.todo-tasks p {
   font-size: 1.9rem;
   font-weight: 600;
   display: flex;
@@ -140,17 +140,17 @@ select{
   height: auto;
   overflow-x: hidden;
 }
-.todo-tasks i{
+.todo-tasks i {
   /* width: 5%; */
   /* height: 100%; */
   cursor: pointer;
   font-size: 1.6rem;
-  padding: 0 .5rem;
-  margin: 0 .5rem;
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
   display: none;
   color: black;
 }
-.clear-all{
+.clear-all {
   /* height: 5rem; */
   width: 200px;
   margin: auto;
@@ -164,20 +164,20 @@ select{
   border-radius: 1rem;
   cursor: pointer;
   margin-top: 3rem;
-  transition: .3s all;
+  transition: 0.3s all;
 }
-.clear-all:hover{
+.clear-all:hover {
   /* background-color: rgb(229, 255, 0); */
   /* color: red; */
   scale: 1.1;
 }
-.checked-line{
+.checked-line {
   text-decoration: line-through;
 }
-.checked-opacity{
-  opacity: .5;
+.checked-opacity {
+  opacity: 0.5;
 }
-.hidden{
+.hidden {
   display: none;
 }
 /* The switch - the box around the slider */
@@ -207,8 +207,8 @@ select{
   right: 0;
   bottom: 0;
   background-color: #6d6d6d;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -219,14 +219,14 @@ select{
   left: 4px;
   bottom: 2.5px;
   background-color: rgb(32, 32, 32);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
   background-color: rgb(139, 139, 255);
 }
-input:checked +.slider:before{
+input:checked + .slider:before {
   background-color: white;
 }
 /* input:focus +.slider:before{
@@ -252,10 +252,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /* modes  */
-.light-mode-main{
+.light-mode-main {
   background-color: rgb(255, 255, 255);
 }
-.light-mode-input{
+.light-mode-input {
   /* background-color: #dafbff; */
   /* box-shadow: 0rem 0rem .5rem rgba(0, 0, 0, 0.171); */
   border: 3px solid rgba(204, 204, 255, 0.555);
@@ -263,54 +263,67 @@ input:checked + .slider:before {
 /* .light-mode-input input:focus{
   border: 1px solid #83aaff;
 } */
-.light-mode-tasks{
+.light-mode-tasks {
   background-color: rgb(230, 230, 255);
-  box-shadow: .2rem .2rem 0.5rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.075);
 }
-.light-mode-clear{
+.light-mode-clear {
   background-color: rgb(139, 139, 255);
-  transition: none;
+  /* transition: none; */
 }
-.light-mode-select{
+.light-mode-select {
   background-color: rgb(230, 230, 255);
 }
-
-
-
-
-
 
 /* Media Queries */
-@media (max-width:1300px) {
-  .todo-tasks-container{
+@media (max-width: 1300px) {
+  .todo-tasks-container {
     margin-top: 5rem;
   }
-  .todo-tasks{
+  .todo-tasks {
     margin: 1rem auto;
   }
-  .todo-tasks i{
+  .todo-tasks i {
     display: inline-block;
   }
 
-  .light-mode-tasks:hover{
+  .light-mode-tasks:hover {
     background-color: rgb(216, 216, 255);
   }
-  .input-text input:focus{
+  .input-text input:focus {
     box-shadow: none;
   }
-  .i1{
+  .i1 {
     color: blue !important;
   }
-  .i2{
+  .i2 {
     color: red !important;
   }
-  .i3{
+  .i3 {
     color: green !important;
   }
-  select{
+  select {
     top: 195px;
     right: 30%;
-    padding: .4rem .5rem;
-
+    padding: 0.4rem 0.5rem;
   }
+}
+.share-button {
+  width: 100px;
+  margin: auto;
+  margin-bottom: 2rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.3s all;
+  border: none;
+}
+.light-mode-share {
+  background-color: #6d6d6d;
 }
